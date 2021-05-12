@@ -1,0 +1,18 @@
+body {
+    color: #fff;
+    background-color: black;
+    font-family: 'Rajdhani', sans-serif; 
+}
+  
+h1 {
+    text-transform: uppercase;
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    margin: 50px;
+}
+
+nav {
+    list-style: none;
+    text-transform: uppercase;
+}
