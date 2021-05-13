@@ -1,4 +1,4 @@
-body {
+/* body {
     color: #fff;
     background-color: black;
     font-family: 'Rajdhani', sans-serif; 
@@ -15,4 +15,93 @@ h1 {
 nav {
     list-style: none;
     text-transform: uppercase;
+} */
+
+body {
+    font-family: sans-serif;
+    /*   background-color: #d6f7a1; */
+    background-color: black;
+}
+
+h2 {
+    color: #FFFFFF;
+}
+/* HEADER STYLES */
+.main-head {
+    list-style: none;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 100px;
+    margin-left: 350px;
+    animation-name: fadeup;
+    animation: 1s fadeup 0.5s forwards;
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+    text-shadow: 0 0 10px #FFFFFF;
+}
+
+h1 {
+    letter-spacing: 5px;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 0 0 10px #FFFFFF;
+    display: flex;
+    justify-content: flex-end;
+    margin: 100px;
+    animation-name: fadeup;
+    animation: 1s fadeup 0.5s forwards;
+}
+
+@keyframes fadeup {
+    0%{
+        opacity: 0;
+        transform: translate(0px, 100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0px, 0px);
+    }
+} 
+  
+/* NAV STYLES  */
+.hidden1:after{
+    content:"Hover";
+}
+.hidden1:hover:after{
+    content:"About";
+    margin-left: 20px;
+    transition: .4s cubic-bezier(0.2, 0.6, 0.2, 1);
+}
+
+.hidden2:after{
+    content:"over";
+}
+.hidden2:hover:after{
+    content:"Projects";
+    margin-left: 20px;
+    transition: .4s cubic-bezier(0.2, 0.6, 0.2, 1);
+}
+
+.hidden3:after{
+    content:"Here.";
+}
+.hidden3:hover:after{
+    content:"Contact";
+    margin-left: 20px;
+    transition: .4s cubic-bezier(0.2, 0.6, 0.2, 1);
+}
+  
+.footer{
+    color: #FFFFFF;
+    text-shadow: 0 0 10px #FFFFFF;
+    opacity: .2;
+    margin-top: 300px;
+    display: flex;
+    justify-content: center;
 }
