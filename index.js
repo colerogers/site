@@ -1,15 +1,17 @@
 const contentTypes = ['about-content', 'work-content', 'connect-content'];
-
-let hideAllContent = function() {
-    contentTypes.forEach(ctype => {
-        document.getElementById(ctype).hidden = true;
-    });
-};
-
+/*
+    hides all other content
+    show the content if hidden,
+    hides the content if shown
+*/
 let showContent = function(contentType) {
-    // we hide each content types
-    // then show the current content
-    hideAllContent();
-    document.getElementById(contentType).hidden = false;
+    contentTypes.forEach(cType => {
+        if (cType !== contentType) {
+            document.getElementById(cType).hidden = true;
+        }
+    });
+
+    let element = document.getElementById(contentType);
+    element.hidden = !element.hidden;
 };
 
