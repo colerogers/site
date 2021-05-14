@@ -7,6 +7,8 @@
     <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400&display=swap" rel="stylesheet"> -->
 	<title>Cole Rogers</title>
+	<link rel = "icon" href ="/assets/memoji.png" type = "image/x-icon">
+	<script src="/index.js" async></script>
   </head>
   
   <body>
@@ -17,13 +19,14 @@
 
 	<div class="main-page">
 		<nav class="main-nav">
-		  <li><a href="#" class="hidden1"></a></li>
-		  <li><a href="#" class="hidden2"></a></li>
-		  <li><a href="#" class="hidden3"></a></li>
+		  <li><a href="#" class="about" onclick="showContent('about-content')"></a></li>
+		  <li><a href="#" class="work" onclick="showContent('work-content')"></a></li>
+		  <li><a href="#" class="connect" onclick="showContent('connect-content')"></a></li>
 		</nav>
 		<div class="main-content">
-			<h2>This is the section of text that will show.</h2>
-			<h2>This is another line.</h2>
+			<h2 id="about-content" hidden="true">For about content.</h2>
+			<h2 id="work-content" hidden="true">For work content.</h2>
+			<h2 id="connect-content" hidden="true">For connect content.</h2>
 		</div>
 	</div>
 
