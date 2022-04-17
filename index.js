@@ -5,13 +5,13 @@ const contentTypes = ['about-content', 'work-content', 'connect-content'];
     hides the content if shown
 */
 const showContent = function(contentType) {
-    contentTypes.forEach(cType => {
-        if (cType !== contentType) {
-            document.getElementById(cType).hidden = true;
+    for (const type of contentTypes) {
+        if (type === contentType) {
+            const element = document.getElementById(contentType);
+            element.hidden = !element.hidden;
+        } else {
+            document.getElementById(type).hidden = true;
         }
-    });
-
-    const element = document.getElementById(contentType);
-    element.hidden = !element.hidden;
+    }
 };
 

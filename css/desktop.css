@@ -1,21 +1,7 @@
-/* body {
-    color: #fff;
-    background-color: black;
-    font-family: 'Rajdhani', sans-serif; 
+@viewport {
+    width: device-width ;
+    zoom: 1.0 ;
 }
-  
-h1 {
-    text-transform: uppercase;
-    display: flex;
-    font-weight: bold;
-    justify-content: center;
-    margin: 50px;
-}
-
-nav {
-    list-style: none;
-    text-transform: uppercase;
-} */
 
 body {
     font-family: sans-serif;
@@ -44,17 +30,15 @@ body {
     margin-top: 0;
 }
 
-.main-page {
+.page {
     color: #FFFFFF;
     font-size: 100px;
     display: flex;
     flex-direction: row;
 }
 
-
-
 /* HEADER STYLES */
-.main-nav {
+.nav {
     list-style: none;
     color: #FFFFFF;
     display: flex;
@@ -63,6 +47,9 @@ body {
     font-size: 100px;
     margin-left: 250px;
     margin-right: 60px;
+    
+    padding: 20px;
+    border: 20px;
     animation-name: fadeup;
     animation: 1s fadeup 0.5s forwards;
 }
@@ -70,10 +57,10 @@ body {
 a {
     text-decoration: none;
     color: #FFFFFF;
-    /* text-shadow: 0 0 10px #FFFFFF; */
+    text-shadow: 0 0 10px #FFFFFF;
 }
 
-.main-content {
+.content {
     color: #FFFFFF;
     display: flex;
     flex-direction: column;
@@ -92,7 +79,7 @@ a {
         opacity: 1;
         transform: translate(0px, 0px);
     }
-} 
+}
   
 /* NAV STYLES  */
 .about:after{
@@ -101,6 +88,7 @@ a {
 .about:hover:after{
     content:"about";
     margin-left: 20px;
+    margin-right: -20px;
     transition: .4s cubic-bezier(0.2, 0.6, 0.2, 1);
 }
 
@@ -110,6 +98,7 @@ a {
 .work:hover:after{
     content:"work";
     margin-left: 20px;
+    margin-right: -20px;
     transition: .4s cubic-bezier(0.2, 0.6, 0.2, 1);
 }
 
@@ -119,6 +108,7 @@ a {
 .connect:hover:after{
     content:"connect";
     margin-left: 20px;
+    margin-right: -20px;
     transition: .4s cubic-bezier(0.2, 0.6, 0.2, 1);
 }
   

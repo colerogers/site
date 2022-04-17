@@ -3,7 +3,8 @@
   <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="/index.css" type="text/css">
+	<link rel="stylesheet" type="text/css" media="screen and (max-width: 480px)" href="/css/mobile.css">
+	<link rel="stylesheet" type="text/css" media="screen and (min-width: 481px)" href="/css/desktop.css">
     <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400&display=swap" rel="stylesheet"> -->
 	<title>Cole Rogers</title>
@@ -14,27 +15,25 @@
   <body>
 	<div class="info">
 		<h1>Cole Rogers</h1>
-		<h1>San Francisco, CA</h1>
+		<h1>New York, NY</h1>
 	</div>
 
-	<div class="main-page">
-		<nav class="main-nav">
+	<div class="page">
+		<nav class="nav">
 		  <li><a href="#" class="about" onclick="showContent('about-content')"></a></li>
 		  <li><a href="#" class="work" onclick="showContent('work-content')"></a></li>
 		  <li><a href="#" class="connect" onclick="showContent('connect-content')"></a></li>
 		</nav>
-		<div class="main-content">
+		<div class="content">
 			<h2 id="about-content" hidden="true">
-				currently focusing on Node.js development \
+				ucsb alumni, prior SF resident, living in NYC
 				<br><br>
-				building distributed systems \
-				<br><br>
-				for awesome developer experiences;
+				surfing, snowboarding, running, eating, & drinking
 			</h2>
 			<h2 id="work-content" hidden="true">
-				software engineer @ Google \
+				software engineer @ Google
 				<br><br>
-				working on Firebase serverless products;
+				&ensp; -> Firebase serverless products
 			</h2>
 			<h2 id="connect-content" hidden="true">
 				<a target="_blank" rel="noopener noreferrer" href="https://linkedin.com/in/colejrogers/">linkedin</a>
