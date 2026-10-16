@@ -156,3 +156,10 @@ a {
         transition: none;
     }
 }
+
+/* Past roles: secondary to the current role. */
+.previously {
+    font-size: 0.7em;
+    font-weight: normal;
+    opacity: 0.55;
+}
